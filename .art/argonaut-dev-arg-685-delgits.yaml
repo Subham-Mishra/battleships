@@ -8,11 +8,6 @@ imageTag: "latest"
 services:
   - port: 80
     protocol: "tls-terminated" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
-    external:
-      hosts:
-        - "delgits.dev.argonaut.live"
-      hostPort: 443
-      paths: ["/"]
 
 argonaut:
   env: dev
